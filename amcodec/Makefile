@@ -64,5 +64,4 @@ install:$(target_all)
 	install  $(INSTALL_FLAGS)	$(TARGET)$(LIB_VERSION)$(LIB_SUB_VERSION)  $(LIB_DIR)
 	mkdir -p $(HEADERS_DIR)
 	cp	-rf $(SRC)/include/*  $(HEADERS_DIR)/
-	-rm  $(LIB_DIR)/$(TARGET)
 	-ln -s $(TARGET)$(LIB_VERSION)$(LIB_SUB_VERSION)  $(LIB_DIR)/$(TARGET)$(LIB_VERSION)
