@@ -2,19 +2,9 @@
 ROOTFS?=$(PREFIX)
 LIB_DIR?=$(PREFIX)/lib
 HEADERS_DIR?=$(INC_DIR)/include
-CROSS=$(CC:%gcc=%)
 QUITE_CMD=1
 
 INSTALL_FLAGS=-m 755
-
-CPP=$(CROSS)g++
-AS=$(CROSS)as
-AR=$(CROSS)ar
-LD=$(CROSS)ld
-NM=$(CROSS)nm
-STRIP=$(CROSS)strip
-OBJCOPY=$(CROSS)objcopy
-export CC CPP AS AR LD NM STRIP OBJCOPY
 
 TOPDIR=$(shell pwd)
 SRC?=$(TOPDIR)
