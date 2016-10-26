@@ -14,7 +14,7 @@ HEADERS_DIR=$(M_PREFIX)/amcodec/include
 
 LDFLAGS +=-L$(PREFIX)/lib -lamadec -lm -lc -shared
 
-CFLAGS+=-I$(shell pwd)/include -I$(shell pwd)/audio_ctl -I$(shell pwd)/codec -I$(shell pwd)/../amadec/include -I$(shell pwd)/../amavutils/include -I${SRCTREE}/codec/yuvplayer -fPIC
+CFLAGS+=-I$(shell pwd)/include -I$(shell pwd)/audio_ctl -I$(shell pwd)/codec -I$(shell pwd)/../amadec/include -I$(shell pwd)/../amavutils/include -I${SRCTREE}/codec/yuvplayer -fPIC -I$(shell pwd)/../amffmpeg
 
 export CC CFLAGS
 
